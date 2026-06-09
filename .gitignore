@@ -1,0 +1,39 @@
+# ── OS / editor ──
+.DS_Store
+*.swp
+.idea/
+.vscode/
+*.log
+
+# ── Local Claude agent memory/config (not part of the app) ──
+.claude/
+
+# ── Secrets / env (belt-and-braces; subprojects also ignore these) ──
+**/.env
+**/.env.*
+!**/.env.example
+
+# ── PHP / Laravel ──
+vendormap-api/vendor/
+vendormap-api/node_modules/
+vendormap-api/public/build/
+vendormap-api/storage/*.key
+vendormap-api/.phpunit.result.cache
+
+# ── Node / React (Vite) ──
+**/node_modules/
+vendormap-web/dist/
+*.local
+
+# ── Flutter ──
+suqna_mobile/.dart_tool/
+suqna_mobile/build/
+suqna_mobile/.flutter-plugins
+suqna_mobile/.flutter-plugins-dependencies
+suqna_mobile/**/.symlinks/
+suqna_mobile/ios/Pods/
+suqna_mobile/macos/Pods/
+suqna_mobile/ios/Flutter/ephemeral/
+suqna_mobile/macos/Flutter/ephemeral/
+suqna_mobile/linux/flutter/ephemeral/
+suqna_mobile/windows/flutter/ephemeral/

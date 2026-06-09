@@ -1,0 +1,5 @@
+package ng.suqna.suqna_mobile
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity : FlutterActivity()
